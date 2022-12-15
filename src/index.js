@@ -1,2 +1,2 @@
-import $ from "jquery";
-$(".carousel").slick();
+import "jquery";
+
