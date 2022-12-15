@@ -1,0 +1,24 @@
+.slideshow__list{
+    display: flex;
+    justify-content: center;
+    .slideshow__item{
+
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .slideshow__item.current{
+        display: flex;
+    }
+}
+
+.slideshow__photo{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.slideshow__text{
+    display: block;
+    max-width: 270px;
+}
