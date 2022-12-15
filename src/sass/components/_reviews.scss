@@ -13,10 +13,10 @@
         justify-content: center;
         align-items: center;
     }
-
-    .slideshow__item.current {
+    .slideshow__item.current{
         display: flex;
     }
+
 }
 
 .slideshow__photo {
@@ -45,19 +45,16 @@
     text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-    .slideshow__text {
+
+@include mq('tablet','min'){
+.slideshow__text {
         max-width: 705px;
     }
 }
-
-@media screen and (min-width: 1200px) {
+@include mq('desktop', 'min') {
     .slideshow__text {
         max-width: 980px;
     }
-
-    
-
 }
 
 .slideshow__name {
