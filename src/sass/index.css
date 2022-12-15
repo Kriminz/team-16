@@ -1,0 +1,100 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.example {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #2f2f37;
+  max-width: 960px;
+  padding: 16px;
+}
+
+.example code {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ff6b0a;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.example .background {
+  height: 240px;
+  background-image: url("../images/logo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  margin: 0;
+  font-family: "Monserrat", sans-serif;
+  background-image: url(../images/body_bg/bg_p1x.jpg);
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  body {
+    background-image: url(../images/body_bg/bg_p2x.jpg);
+  }
+}
+@media screen and (min-width: 767px) {
+  body {
+    background-image: url(../images/body_bg/bg_t1x.jpg);
+  }
+}
+@media screen and (min-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (min-resolution: 2dppx) {
+  body {
+    background-image: url(../images/body_bg/bg_t2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url(../images/body_bg/bg_d1x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  body {
+    background-image: url(../images/body_bg/bg_d2x.jpg);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.slideshow__list {
+  display: flex;
+  justify-content: center;
+}
+.slideshow__list .slideshow__item {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slideshow__list .slideshow__item.current {
+  display: flex;
+}
+
+.slideshow__photo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.slideshow__text {
+  display: block;
+  max-width: 270px;
+}/*# sourceMappingURL=index.css.map */
